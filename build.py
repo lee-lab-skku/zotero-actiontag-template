@@ -25,5 +25,5 @@ for meta in metas:
     meta_data['data'] = src_code
     datas['actions'][action] = meta_data
 
-with open(dist_dir / f'zotero-actiontag-{Path(__file__).parent.name}.yml', 'w', encoding='utf-8') as f:
+with open(dist_dir / f'{Path(__file__).parent.name}.yml', 'w', encoding='utf-8') as f:
     yaml.dump(datas, f, allow_unicode=True)
